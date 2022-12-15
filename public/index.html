@@ -19,10 +19,16 @@
   <link href="./css/styles.css" rel="stylesheet">
 </head>
 
-<body class="font-open">
+<body class="font-open dark">
+
+  <!--Dark/Light Toggle-->
+  <div class="absolute top-1 left-5 cursor-pointer text-lg">
+    <i class="fa-solid fa-sun text-white" id="sun"></i>
+    <i class="fa-solid fa-moon text-black hidden" id="moon"></i>
+  </div>
 
   <!--Header Section-->
-  <header class="bg-black py-6 lg:py-12 text-gega-grey uppercase">
+  <header class="dark:bg-black bg-white py-6 lg:py-12 dark:text-gega-grey text-black uppercase">
     <!--Header Container-->
     <div class="container flex items-center justify-between space-x-8 lg:space-x-16">
       <!--Logo-->
@@ -562,7 +568,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="./js/script.js"></script>
 </body>
 
 </html>
